@@ -1,4 +1,8 @@
-{
+{    
+    "navigationBarTitleText": "疾病初筛分析",
     "component": true,
-    "usingComponents": {}
+    "usingComponents": {
+        "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar",
+        "t-upload": "tdesign-miniprogram/upload/upload"
+    }
 }

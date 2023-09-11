@@ -1,2 +1,13 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<t-notice-bar class="center-text" visible="{{true}}" prefixIcon="{{false}}" content="请上传细胞样品图片获取分析情景" ></t-notice-bar>
+
+<view class="wrapper">
+  <t-upload
+    media-type="{{['video','image']}}"
+    files="{{originFiles}}"
+    gridConfig="{{gridConfig}}"
+    bind:success="handleSuccess"
+    bind:remove="handleRemove"
+    bind:click="handleClick"
+  />
+</view>

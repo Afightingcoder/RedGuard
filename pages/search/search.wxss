@@ -1,1 +1,10 @@
 /* pages/search/search.wxss */
+.example-search {
+    background-color: #fff;
+    padding: 16rpx 32rpx;
+  }
+  
+  .example-search:not(:last-child) {
+    margin-bottom: 32rpx;
+  }
+  

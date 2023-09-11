@@ -28,16 +28,16 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "疾病初筛分析",
+        "text": "主页",
         "iconPath": "assets/zhuye.png",
         "selectedIconPath": "assets/zhuye-copy.png",
         "customClass": "tabbar-icon"
       },
       {
         "pagePath": "pages/search/search",
-        "text": "常见疾病",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "text": "百科",
+        "iconPath": "assets/book.png",
+        "selectedIconPath": "assets/book - copy.png",
         "customClass": "tabbar-icon"
       },
       {

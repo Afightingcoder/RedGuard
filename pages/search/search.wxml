@@ -1,2 +1,4 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="example-search">
+  <t-search placeholder="搜索常见时症" shape="round" />
+</view>
