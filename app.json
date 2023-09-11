@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/my/my"
+  ],
+  "subpackages": [
+   
+  ],
+  "usingComponents": {
+    "t-demo": "./components/demo-block/index",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "backgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "RedGuard",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    
+    "color": "#707070",
+    "selectedColor": "#69f7fc",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "疾病初筛分析",
+        "iconPath": "assets/zhuye.png",
+        "selectedIconPath": "assets/zhuye-copy.png",
+        "customClass": "tabbar-icon"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "常见疾病",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "customClass": "tabbar-icon"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "用户",
+        "iconPath": "assets/weibiaoti2fuzhi12.png",
+        "selectedIconPath": "assets/weibiaoti2fuzhi12-copy.png",
+        "customClass": "tabbar-icon"
+      }
+      
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
