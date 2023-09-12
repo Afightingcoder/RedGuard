@@ -2,3 +2,40 @@
 .center-text {
     text-align: center;
 }
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使用视窗高度作为容器高度，确保按钮位于正中间 */
+}
+
+.round-button {
+  width: 160px; /* 调整按钮的宽度，使其成为圆形 */
+  height: 160px; /* 调整按钮的高度，使其成为圆形 */
+  border-radius: 50%; /* 将按钮变成圆形 */
+  background-color: #007bff; /* 设置按钮的背景颜色 */
+  color: #fff; /* 设置按钮文本颜色 */
+  border: none; /* 移除按钮边框 */
+}
+.button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 确保文本居中在按钮内 */
+}
+/* pages/home/home.wxss */
+.top-images {
+  display: flex;
+  overflow-x: scroll; /* 如果图片数量过多，可以横向滚动 */
+  align-items: center;
+  padding: 10px; /* 可以调整上方容器的内边距 */
+}
+
+.uploaded-image {
+  width: 50px; /* 设置图片的宽度 */
+  height: 50px; /* 设置图片的高度 */
+  margin-right: 10px; /* 设置图片之间的右边距 */
+  border-radius: 5px; /* 可以添加圆角效果 */
+}
+
+

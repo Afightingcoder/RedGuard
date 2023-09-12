@@ -1,13 +1,24 @@
 <!--pages/home/home.wxml-->
 <t-notice-bar class="center-text" visible="{{true}}" prefixIcon="{{false}}" content="请上传细胞样品图片获取分析情景" ></t-notice-bar>
+<view class="top-images">
+  <block wx:for="{{originFiles}}">
+    <image class="uploaded-image" src="{{item.url}}" mode="aspectFill" bindtap="previewImage"></image>
+  </block>
+</view>
+<view class="center-button">
+  <button class="round-button" bindtap="uploadImage">
+    <view class="button-text">上传文件</view>
+  </button>
+</view>
 
+<!-- 
 <view class="wrapper">
   <t-upload
-    media-type="{{['video','image']}}"
+    media-type="{{['image']}}"
     files="{{originFiles}}"
     gridConfig="{{gridConfig}}"
     bind:success="handleSuccess"
     bind:remove="handleRemove"
     bind:click="handleClick"
   />
-</view>
+</view> -->
