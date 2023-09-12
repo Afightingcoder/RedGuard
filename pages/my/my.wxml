@@ -1,70 +1,26 @@
 <!--pages/my/my.wxml-->
-<view class="container">
-  <view class = 'info'>
-    <view class = "person-info">
-    <t-cell-group class = 'cell-group'>
-      <t-cell
-      class='my_cell'
-      wx-if='{{isLoad}}' 
-      bordered='{{false}}'
-      hover>
-      <t-avatar class="avatar" image="{{image}}"  slot="left-icon"  size='large'/>
-      <view class="person-name" slot='note'>
-        <view class='name'>{{name}}</view>
-        <view class='person-tag'>
-          <view class='star'>
-            <t-icon name='discount' class='icon-star'/>
-            <view class='name-star'>{{star}}</view>
-          </view>
-          <view class='star'>
-            <t-icon name="location" class='icon-star'/>
-            <view class='name-star'>{{city}}</view>
-          </view>
-        </view>
-        </view>
-        <t-icon class='t-class-icon-edit' slot='right-icon' name='edit' bindtap='GotoEdit'></t-icon>
-      </t-cell>
-      <t-cell  wx-if='{{!isLoad}}' title="请先登录/注册" t-cell-title='unLoginTitle' bindtap="Login" bordered='{{false}}' t-class-title='loginTitle' hover>
-        <t-icon name="user" class='icon' slot="left-icon" />
-      </t-cell>
-    </t-cell-group>
+<view class="head-box">
+  <view class="userinfo">
+    <image class="userinfo-avatar" bindtap="getUserInfo" src="{{avatarUrl}}" wx:if="{{hasUserInfo}}"></image>
+    <button class="userinfo-avatar" bindtap="getUserInfo" wx:else>微信登录</button>
+    <view class="userinfo-details">
+      <view class="userinfo-nickname" wx:if="{{hasUserInfo}}">
+        <open-data type="userNickName"></open-data>
+      </view>
+      <view class="userinfo-nickname" wx:else>
+        昵称
+      </view>
+      <view class="user-motto">
+        <text class="user-motto">{{motto}}</text>
+      </view>
     </view>
-    <t-divider/>
-    <view class='Release-catalog'>
-    <view class='Release all'>
-   
-    
-    </view>
-    </view>
-  </view>
-  <view class='service'>
-  <view class='tip'>推荐服务</view>
-  <view class='box'>
-    <view wx:for='{{service}}' 
-    wx:key="item"  
-    data-type='{{item.type}}'
-    bindtap="onClickCell"
-    class='service-box' >
-    <view class='service-image'>
-    <t-image src="{{item.image}}" mode="aspectFill" />
-    </view>
-    <view class='service-name'>{{item.name}}</view>
-    </view>
-  </view>
-  </view>
-  <view class='setting'> 
-    <t-cell-group class='set-group'>
-      <t-cell wx:for="{{settingdata}}" wx:key="item" 
-      title="{{item.name}}" 
-      hover arrow  
-      bordered="{{false}}" 
-      t-class-right-icon='cell-icon' 
-      t-class-note='cell-note' 
-      class='cell-set'
-      data-type='{{item.type}}'
-      bind:click="onClickCell">
-        <t-icon name="{{item.icon}}"  slot="left-icon" class='cell-left-icon'/>
-        </t-cell>
-    </t-cell-group>
   </view>
 </view>
+
+
+
+<t-cell title="血细胞数量跟踪记录" hover arrow leftIcon="service" bordered="{{false}}" style="margin-top: 150px;"/>
+<t-cell title="图片上传记录" hover arrow leftIcon="image" bordered="{{false}}" style="margin-top: 10px;"/>
+<!-- <view class="head-box">
+  
+</view> -->
