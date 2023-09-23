@@ -1,0 +1,7 @@
+<!--pages/Fever/Fever.wxml-->
+<text>pages/Fever/Fever.wxml</text>
+<!-- pageB.wxml -->
+<view>
+  <text>这是页面B的内容</text>
+</view>
+

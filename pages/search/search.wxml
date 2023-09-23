@@ -2,3 +2,27 @@
 <view class="example-search">
   <t-search placeholder="搜索常见时症" shape="round" />
 </view>
+<!-- search.wxml -->
+<view style="display: flex; justify-content: space-between;">
+  <!-- 第一张图片和标题 -->
+  <view style="text-align: center;">
+    <navigator url="/pages/Fever/Fever">
+      <image src="/assets/Fever.png" style="width: 160px; height: 105px;" />
+    </navigator>
+    <text>发热</text>
+  </view>
+
+  <!-- 空白间隔 -->
+  <view style="width: 15px;"></view>
+
+  <!--贫血症 -->
+  <view style="text-align: center;">
+    <navigator url="/pages/PinXue/PinXue">
+      <image src="/assets/PinXue.png" style="width: 165px; height: 100px;" />
+    </navigator>
+    <text>贫血症</text>
+  </view>
+</view>
+
+
+
