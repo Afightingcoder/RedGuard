@@ -6,7 +6,10 @@
         "pages/my/my",
         "pages/Fever",
         "pages/Fever/Fever",
-        "pages/PinXue/PinXue"
+        "pages/PinXue/PinXue",
+        "pages/Chat/chat",
+        "uni_modules/uni-popup/components/uni-popup/uni-popup",
+        "uni_modules/uni-popup/uni-transition/components/uni-transition/uni-transition"
     ],
     "subpackages": [],
     "usingComponents": {
@@ -39,6 +42,13 @@
                 "text": "百科",
                 "iconPath": "assets/book.png",
                 "selectedIconPath": "assets/book - copy.png",
+                "customClass": "tabbar-icon"
+            },
+            {
+                "pagePath": "pages/Chat/chat",
+                "text": "智能医生",
+                "iconPath": "assets/weibiaoti2fuzhi12.png",
+                "selectedIconPath": "assets/weibiaoti2fuzhi12-copy.png",
                 "customClass": "tabbar-icon"
             },
             {

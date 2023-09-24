@@ -1,0 +1,62 @@
+/* pages/Chat/chat.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  padding: 20rpx;
+}
+
+.message-list {
+  flex: 1;
+}
+
+.message-item {
+  margin-bottom: 10rpx;
+}
+
+.message-content {
+  padding: 10rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.user {
+  background-color: #007aff;
+}
+
+.chatgpt {
+  background-color: #555;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+
+.input-msg {
+  flex: 1;
+  height: 80rpx;
+  padding: 0 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+}
+
+.send-btn {
+  position: relative;
+  right: 10px;
+  margin-left: 50rpx;
+  width: 130rpx;
+  height: rpx;
+  padding: 12rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+  line-height: 40rpx;
+  text-align: center;
+  align-items: center;
+  background-color: #007aff;
+  border-radius: 20rpx;
+  color: #fff;
+}
