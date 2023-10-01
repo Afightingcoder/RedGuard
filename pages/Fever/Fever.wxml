@@ -1,7 +1,16 @@
 <!--pages/Fever/Fever.wxml-->
-<text>pages/Fever/Fever.wxml</text>
 <!-- pageB.wxml -->
 <view>
-  <text>这是页面B的内容</text>
+  <h1 class="Fever-title">
+    发热
+  </h1>
+  <h2 class="h2-heading">
+  一、概览
+  </h2>
+  <text class="text">  
+  正常人的体温受体温调节中枢调控，并通过神经、体液因素使产热和散热过程呈动态平衡，保持体温在相对恒定的范围内。发热是指致热原直接作用于体温调节中枢、体温中枢功能紊乱或各种原因引起的产热过多、散热减少，导致体温升高超过正常范围的情形。
+  
+  每个人的正常体温略有不同，而且受许多因素（时间、季节、环境、月经等）的影响。一般为36～37℃，判定是否发热，最好是和自己平时同样条件下的体温相比较。如不知自己原来的体温，则腋窝体温（检测10分钟）超过37.4℃可定为发热</text>
+  <image src= "/assets/Fever(baidu).png" style="position: relative; top: 270px" mode="widthFix" />
 </view>
 

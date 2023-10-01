@@ -7,18 +7,18 @@
   <!-- 第一张图片和标题 -->
   <view style="text-align: center;">
     <navigator url="/pages/Fever/Fever">
-      <image src="/assets/Fever.png" style="width: 160px; height: 105px;" />
+      <image src="/assets/Fever.png" style="width: 150px; height: 90px;" />
     </navigator>
     <text>发热</text>
   </view>
 
   <!-- 空白间隔 -->
-  <view style="width: 15px;"></view>
+  <view style="width: 30px;"></view>
 
   <!--贫血症 -->
   <view style="text-align: center;">
     <navigator url="/pages/PinXue/PinXue">
-      <image src="/assets/PinXue.png" style="width: 165px; height: 100px;" />
+      <image src="/assets/PinXue.png" style="width: 190px; height: 90px;" />
     </navigator>
     <text>贫血症</text>
   </view>

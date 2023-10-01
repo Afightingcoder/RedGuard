@@ -1,1 +1,27 @@
 /* pages/Fever/Fever.wxss */
+.Fever-title{
+  position: relative;
+  color: darkslateblue;
+  text-decoration: darkslateblue;
+  text-align: center;
+  text-justify: center;
+  margin-right: auto;
+  left:35%;
+  font-size: 50px;
+}
+
+.h2-heading{
+  position: absolute;
+  color: darkslateblue;
+  text-decoration: darkslateblue;
+  font-size: 20px;
+  line-height: 5px;
+  left: 0px;
+  top: 75px;
+}
+
+.text{
+  top: 70px;
+  position:absolute;
+  left: 0px;
+}
